@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Adicionando imagens que mudarão com o tamanho da imagem</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Áudios</h1>
+    <audio preload="metadata" controls>
+        <source src="audios/Allemande (Sting) - Wahneta Meixsell.mp3" type="audio/mpeg">
+        <source src="audios/Allemande (Sting) - Wahneta Meixsell.wav" type="audio/mpeg">
+        <source src="audios/Allemande (Sting) - Wahneta Meixsell.ogg" type="audio/mpeg">
+    </audio>
+    <h1>Vídeos</h1>
+    <ul>
+        <li>
+            <H2>Vídeo hospedado internamente</H2>
+        </li>
+        <video poster="images/foto-p.png" height="500px" controls> 
+            <source src="video/Vídeo do WhatsApp de 2024-09-23 à(s) 20.03.52_acf4c077.mp4" type="video/mp4">
+        </video>
+        <li>
+            <h2>Vídeo hospedado externamente</h2>
+        </li>
+        <iframe width="560" height="315" src="https://youtu.be/CXdlh4EROw8?si=IyEyIy    -oI6FVx4iP" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe> 
+    </ul>
+</body>
+</html>
